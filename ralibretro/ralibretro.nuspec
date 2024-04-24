@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>ralibretro</id>
+    <version>1.7.0</version>
+	<!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <owners>Coloradohusky</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>RALibRetro</title>
+    <authors>RetroAchievements developers</authors>
+	<projectUrl>https://github.com/RetroAchievements/RALibretro</projectUrl>
+    <!--<iconUrl>tools\icon.png</iconUrl> -->
+    <copyright>GPLv3</copyright>
+    <licenseUrl>https://github.com/RetroAchievements/RALibretro/blob/1.7.0/COPYING</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/RetroAchievements/RALibretro</projectSourceUrl>
+    <docsUrl>https://docs.retroachievements.org/RALibretro/</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/RetroAchievements/RALibretro/issues</bugTrackerUrl>
+    <tags>ralibretro emulation emulators libretro</tags>
+    <summary>A retro emulator used for developing achievements with RetroAchievements.</summary>
+    <description>A frontend for libretro used for developing achievements with RetroAchievements.</description>
+    <releaseNotes>https://github.com/RetroAchievements/RALibretro/releases/tag/1.7.0</releaseNotes>
+    <!-- =============================== -->
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.7" />
+    </dependencies>
+    <!-- chocolatey-core.extension - https://community.chocolatey.org/packages/chocolatey-core.extension -->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
