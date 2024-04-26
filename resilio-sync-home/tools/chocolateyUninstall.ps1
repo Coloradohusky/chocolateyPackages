@@ -20,7 +20,7 @@ if ($key.Count -eq 1) {
 	  $fileStringSplit = $packageArgs['file'] -split '\s+(?=(?:[^"]|"[^"]*")*$)'
 	  if ($fileStringSplit.Count -gt 1) {
 		  $packageArgs['file'] = $fileStringSplit[0]
-		  $env:chocolateyInstallArguments += " $($fileStringSplit[1..($fileStringSplit.Count-1)])"
+		  $packageArgs['silentArgs'] += " $($fileStringSplit[1..($fileStringSplit.Count-1)])"
 	  }
 	}
     Uninstall-ChocolateyPackage @packageArgs

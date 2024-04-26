@@ -4,7 +4,7 @@
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>resilio-sync-home</id>
     <version>2.7.3.1381</version>
-    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/resilio-sync-home</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
 
@@ -13,7 +13,7 @@
     <title>Resilio Sync Home (Install)</title>
     <authors>Resilio Inc.</authors>
     <projectUrl>https://www.resilio.com/individuals/</projectUrl>
-    <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/resilio-sync-home.png</iconUrl>-->
+    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/74bfdeb7cc53ed3c3d6089844021b51b17fd0e40/resilio-sync-home/tools/icon.png</iconUrl>
     <copyright>© 2022 Resilio, Inc.</copyright>
     <licenseUrl>https://www.resilio.com/legal/eula/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -23,11 +23,24 @@
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>resilio sync btsync bittorrent backup</tags>
     <summary>Resilio Sync - A fast, reliable, and simple file sync and share solution.</summary>
-    <description>
-	Resilio Sync is a fast, reliable, and simple file sync and share solution, powered by P2P technology.
-	To remove user settings when uninstalling, run <code>choco uninstall resilio-sync-home --ua /remsettings</code>.
+    <description>Resilio Sync is a fast, reliable, and simple file sync and share solution, powered by P2P technology.
+	To remove user settings when uninstalling, run `choco uninstall resilio-sync-home --ua /remsettings`.
 	</description>
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+    <releaseNotes>
+    * Use sha-256 signed certificate for WebUI for new installations
+    * Add .icloud to default IgnoreList
+    * Deprecated: support for WindowsServers for Sync Home Free and Pro
+    * Fixed non-clickable "Can't download file" error
+    * Fixed improper reporting the error about missing access permissions
+    * Fixed false positive "No free space" error on WD NAS
+    * Fixed crashes on QNAP and Synology in some cases
+    * Fixed crash caused by mix of composed and decomposed symbols in filenames
+    * Fixed crash when syncing streams from NTFS formatted drive on macOS
+    * Fixed losing history log entries after update
+    * Fixed generating sample configuration file
+    * Fixed Finder Extensions getting enabled again after Sync restart on macOS
+    * Other core and UI fixes
+	</releaseNotes>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->

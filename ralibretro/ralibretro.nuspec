@@ -4,7 +4,7 @@
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ralibretro</id>
     <version>1.7.0</version>
-	<!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+	<packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/ralibretro</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
 
@@ -13,7 +13,7 @@
     <title>RALibRetro</title>
     <authors>RetroAchievements developers</authors>
 	<projectUrl>https://github.com/RetroAchievements/RALibretro</projectUrl>
-    <!--<iconUrl>tools\icon.png</iconUrl> -->
+    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/74bfdeb7cc53ed3c3d6089844021b51b17fd0e40/ralibretro/tools/icon.png</iconUrl>
     <copyright>GPLv3</copyright>
     <licenseUrl>https://github.com/RetroAchievements/RALibretro/blob/1.7.0/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -23,7 +23,9 @@
     <bugTrackerUrl>https://github.com/RetroAchievements/RALibretro/issues</bugTrackerUrl>
     <tags>ralibretro emulation emulators libretro</tags>
     <summary>A retro emulator used for developing achievements with RetroAchievements.</summary>
-    <description>A frontend for libretro used for developing achievements with RetroAchievements.</description>
+    <description>A frontend for libretro used for developing achievements with RetroAchievements.
+	To add a desktop shortcut when installing, run `choco install ralibretro --params /DesktopShortcut`.
+	</description>
     <releaseNotes>https://github.com/RetroAchievements/RALibretro/releases/tag/1.7.0</releaseNotes>
     <!-- =============================== -->
 
