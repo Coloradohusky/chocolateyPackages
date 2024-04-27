@@ -12,18 +12,18 @@
     <version>0.50.0</version>
     <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
+    <!--<owners>Coloradohusky</owners>-->
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Sideloadly (Install)</title>
+    <title>Sideloadly</title>
     <authors>Sideloadly</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
+    <projectUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/sideloadly</projectUrl>
     <!-- There are a number of CDN Services that can be used for hosting the Icon for a package. More information can be found here: https://docs.chocolatey.org/en-us/create/create-packages#package-icon-guidelines -->
     <!-- Here is an example using Githack -->
-    <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/sideloadly.png</iconUrl>-->
+    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/107f11b3a5b9b53579d4285eb579b7ed845a2940/sideloadly/tools/icon.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
     <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
@@ -32,9 +32,9 @@
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>sideloadly sideloading</tags>
-    <summary>__REPLACE__</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
+    <tags>sideloadly sideloading apple ios macos</tags>
+    <summary>Sideloadly lets you sideload iOS apps to your Apple devices.</summary>
+    <description>Sideloadly lets you sideload iOS apps to your Apple devices.</description>
     <releaseNotes>* Sideloadly no longer requires a Mail Plug-In to obtain the required anisette data. However, the Mail Plug-In option will still be available as a backup.
 * Device Two-Factor Authentication (2FA) issued have been fixed so you can now login to your Apple ID without SMS 2FA.
 * New and improved Remote Anisette which will work on every macOS and Windows version Sideloadly supports with no local files or anisette setup required. Patreon feature.
