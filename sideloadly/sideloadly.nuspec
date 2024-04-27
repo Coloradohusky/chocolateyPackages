@@ -9,10 +9,10 @@
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.50.0</version>
-    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <version>0.50.3</version>
+    <!-- <packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/sideloadly</packageSourceUrl>-->
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <!--<owners>Coloradohusky</owners>-->
+    <owners>Coloradohusky</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
@@ -20,7 +20,7 @@
     <title>Sideloadly</title>
     <authors>Sideloadly</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/sideloadly</projectUrl>
+    <projectUrl>https://sideloadly.io/</projectUrl>
     <!-- There are a number of CDN Services that can be used for hosting the Icon for a package. More information can be found here: https://docs.chocolatey.org/en-us/create/create-packages#package-icon-guidelines -->
     <!-- Here is an example using Githack -->
     <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/107f11b3a5b9b53579d4285eb579b7ed845a2940/sideloadly/tools/icon.png</iconUrl>
@@ -49,7 +49,7 @@
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
 	  <dependency id="chocolatey" version="0.9.9.7" />
-	  <dependency id="iTunes" version="11.4" />
+	  <dependency id="iTunes" version="12.13.1.3" />
 	  <dependency id="iCloud" version="7.21.0.23" />
     </dependencies>
   </metadata>
