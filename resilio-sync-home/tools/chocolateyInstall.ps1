@@ -25,7 +25,7 @@ $packageArgs = @{
   checksum       = $checksum
   checksum64     = $checksum64
   checksumType   = 'sha256' 
-  checksumType64 = 'sha256' 
+  checksumType64 = 'sha256'
 }
 
 Start-CheckandStop "Resilio Sync"

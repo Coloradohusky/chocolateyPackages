@@ -26,21 +26,19 @@
     <description>Resilio Sync is a fast, reliable, and simple file sync and share solution, powered by P2P technology.
 	To remove user settings when uninstalling, run `choco uninstall resilio-sync-home --ua /remsettings`.
 	</description>
-    <releaseNotes>
-    * Use sha-256 signed certificate for WebUI for new installations
-    * Add .icloud to default IgnoreList
-    * Deprecated: support for WindowsServers for Sync Home Free and Pro
-    * Fixed non-clickable "Can't download file" error
-    * Fixed improper reporting the error about missing access permissions
-    * Fixed false positive "No free space" error on WD NAS
-    * Fixed crashes on QNAP and Synology in some cases
-    * Fixed crash caused by mix of composed and decomposed symbols in filenames
-    * Fixed crash when syncing streams from NTFS formatted drive on macOS
-    * Fixed losing history log entries after update
-    * Fixed generating sample configuration file
-    * Fixed Finder Extensions getting enabled again after Sync restart on macOS
-    * Other core and UI fixes
-	</releaseNotes>
+    <releaseNotes>* Use sha-256 signed certificate for WebUI for new installations
+* Add .icloud to default IgnoreList
+* Deprecated: support for WindowsServers for Sync Home Free and Pro
+* Fixed non-clickable "Can't download file" error
+* Fixed improper reporting the error about missing access permissions
+* Fixed false positive "No free space" error on WD NAS
+* Fixed crashes on QNAP and Synology in some cases
+* Fixed crash caused by mix of composed and decomposed symbols in filenames
+* Fixed crash when syncing streams from NTFS formatted drive on macOS
+* Fixed losing history log entries after update
+* Fixed generating sample configuration file
+* Fixed Finder Extensions getting enabled again after Sync restart on macOS
+* Other core and UI fixes</releaseNotes>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
