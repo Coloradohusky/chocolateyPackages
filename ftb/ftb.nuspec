@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>ftb</id>
+    <version>1.25.8</version>
+	<packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/feed-the-beast</packageSourceUrl>
+    <owners>Coloradohusky</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>Feed the Beast</title>
+    <authors>Feed the Beast</authors>
+	<projectUrl>https://feed-the-beast.com/ftb-app</projectUrl>
+    <iconUrl></iconUrl>
+    <copyright>© 2024 - Copyright Feed The Beast Ltd</copyright>
+    <licenseUrl></licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/FTBTeam/FTB-App</projectSourceUrl>
+    <docsUrl>https://feed-the-beast.com/ftb-app/getting-started</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/FTBTeam/FTB-App/issues</bugTrackerUrl>
+    <tags>feed-the-beast modded minecraft ftb java</tags>
+    <summary>Find, download, and manage your FTB Mod packs.</summary>
+    <description>Find, download, and manage your FTB Mod packs!</description>
+    <releaseNotes>This version also brings the availability of our Electron only version of the FTB App for Windows! You can get it from the FTB website.
+* Added
+    * CurseForge mods will now have a "CurseForge" badge in the mod details that will take you to the mod page on the CurseForge website #716
+* Changed
+    * All authentication methods now use the ftb:// protocol instead of a local web server. This should improve the reliability of the authentication process
+    * We now refresh your Minecraft Authentication token if it's within 6 hours of expiring to ensure you can continue to play your instances without interruption
+    * Improved the wording around the "Instance relocation system" so it is clear that this is a relocation process and not a just a settings value #1077
+    * Ram will now actually save if you change it via the input box #1024
+    * Ram values now show the correct ram calculation. Thanks to @bryce-schultz
+    * Hopefully fixed the app icon not working on linux machines #1098
+    * Some modpack names breaking the file path due to trailing spaces #1099
+    * Instances can now be relocated to basically anywhere instead of having safeguards around nested folders #1061 #1095
+    * Java Licenses not linking to their respective Github Pages correctly</releaseNotes>
+    <!-- =============================== -->
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9.7" />
+    </dependencies>
+    <!-- chocolatey-core.extension - https://community.chocolatey.org/packages/chocolatey-core.extension -->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
