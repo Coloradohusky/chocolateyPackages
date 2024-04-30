@@ -38,24 +38,25 @@ $packageArgs = @{
   checksumType64 = 'sha256'
 }
 
-if ($pp.InstallDir) {
-  $packageArgs.silentArgs += " -installdir " + $pp.InstallDir
-  Write-Host "Install dir set to '$pp.InstallDir'"
-}
+$installDir = 'C:\Program Files (x86)\Backblaze'
 
-if ($pp.EmailAddr) {
-  $packageArgs.silentArgs += " -signinaccount" + $pp.EmailAddr
-} else {
-  Write-Error "Enter your login email address with /EmailAddr"
-}
-
-if ($pp.Password) {
-  $packageArgs.silentArgs += " " + $pp.Password
-} else {
-  Write-Error "Enter your login password with /Password"
-}
-
-Start-CheckandStop "Backblaze"
+Start-CheckandStop "bzbui"
+Start-CheckandStop "bzserv"
+Start-CheckandStop "bzbuitray"
+Start-CheckandStop "bzfilelist"
+Start-CheckandStop "bzfilelist64"
+Start-CheckandStop "bztransmit"
+Start-CheckandStop "bztransmit64"
 Install-ChocolateyPackage @packageArgs
 Start-Sleep -s 5
 if ($ProcessWasRunning -eq $False) {Start-CheckandStop "Backblaze"}
+
+# TODO: fix with --ia '-installdir "<installdir>"'
+# nvm -installdir doesn't even work
+if ($pp.DesktopShortcut) {
+  $desktop = [System.Environment]::GetFolderPath("Desktop")
+  Install-ChocolateyShortcut -ShortcutFilePath "$desktop\Backblaze Control Panel.lnk" `
+    -TargetPath "$installDir\bzbui.exe" -WorkingDirectory "$installDir" `
+    -WindowStyle 3
+  Write-Host "Added desktop shortcut at '$desktop\Backblaze Control Panel.lnk'"
+}

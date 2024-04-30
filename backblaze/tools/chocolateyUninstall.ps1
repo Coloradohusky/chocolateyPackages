@@ -3,9 +3,17 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'Backblaze'
   fileType      = 'EXE'
-  silentArgs   = '--nogui'
+  silentArgs   = '' # there unfortunately isn't a setting for a silent uninstall
   validExitCodes= @(0)
 }
+
+# Settings
+# -h generates help message
+# -version prints out the version of bzdoinstall
+# -version_to_file <fname> puts version in the file
+# -unzip <zipFileName> unzip this file
+# -douninstall uninstalls the product
+# -doinstall <dir_containing_files_to_install> [-nogui]
 
 # Get package parameters
 $pp = Get-PackageParameters
@@ -48,3 +56,9 @@ if ($key.Count -eq 1) {
   Write-Warning "Please alert package maintainer the following keys were matched:"
   $key | % {Write-Warning "- $($_.DisplayName)"}
 }
+
+if ($pp.DesktopShortcut) {
+  $desktop = [System.Environment]::GetFolderPath("Desktop")
+  Remove-Item "$desktop\Backblaze Control Panel.lnk" -ErrorAction SilentlyContinue -Force | Out-Null
+}
+Remove-Item "C:\Program Files\Backblaze" -ErrorAction SilentlyContinue -Force | Out-Null
