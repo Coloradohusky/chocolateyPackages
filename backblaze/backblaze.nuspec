@@ -24,7 +24,7 @@
     <tags>resilio sync btsync bittorrent backup</tags>
     <summary>Resilio Sync - A fast, reliable, and simple file sync and share solution.</summary>
     <description>Resilio Sync is a fast, reliable, and simple file sync and share solution, powered by P2P technology.
-	To remove user settings when uninstalling, run `choco uninstall resilio-sync-home --ua /remsettings`.
+	To remove user settings when uninstalling, run `choco install backblaze --params /DesktopShortcut --ia '-signinaccount ""email"" ""password""'`.
 	</description>
     <releaseNotes>* Use sha-256 signed certificate for WebUI for new installations
 * Add .icloud to default IgnoreList
