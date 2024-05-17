@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>resilio-sync-home</id>
-    <version>2.7.3.1381</version>
+    <version>2.8.0.1389</version>
     <packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/resilio-sync-home</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -14,7 +14,7 @@
     <authors>Resilio Inc.</authors>
     <projectUrl>https://www.resilio.com/individuals/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/74bfdeb7cc53ed3c3d6089844021b51b17fd0e40/resilio-sync-home/tools/icon.png</iconUrl>
-    <copyright>© 2022 Resilio, Inc.</copyright>
+    <copyright>© 2024 Resilio, Inc.</copyright>
     <licenseUrl>https://www.resilio.com/legal/eula/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
@@ -26,19 +26,10 @@
     <description>Resilio Sync is a fast, reliable, and simple file sync and share solution, powered by P2P technology.
 	To remove user settings when uninstalling, run `choco uninstall resilio-sync-home --ua /remsettings`.
 	</description>
-    <releaseNotes>* Use sha-256 signed certificate for WebUI for new installations
-* Add .icloud to default IgnoreList
-* Deprecated: support for WindowsServers for Sync Home Free and Pro
-* Fixed non-clickable "Can't download file" error
-* Fixed improper reporting the error about missing access permissions
-* Fixed false positive "No free space" error on WD NAS
-* Fixed crashes on QNAP and Synology in some cases
-* Fixed crash caused by mix of composed and decomposed symbols in filenames
-* Fixed crash when syncing streams from NTFS formatted drive on macOS
-* Fixed losing history log entries after update
-* Fixed generating sample configuration file
-* Fixed Finder Extensions getting enabled again after Sync restart on macOS
-* Other core and UI fixes</releaseNotes>
+    <releaseNotes>* Core improvements
+* Bugfix
+* Deprecated: support for iOS 8, iOS 9 and iOS 11.
+</releaseNotes>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
