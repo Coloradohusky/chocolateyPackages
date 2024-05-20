@@ -46,7 +46,19 @@ if ($key.Count -eq 1) {
 		  $packageArgs['silentArgs'] += " $($fileStringSplit[1..($fileStringSplit.Count-1)])"
 	  }
 	}
+	#Thanks to dtgm and the GitHub package for ideas.
+	$scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+	$ahkFile = Join-Path $scriptPath "uninstall.ahk"
+	$ahkRun = "$Env:Temp\$(Get-Random).ahk"
+
+	Copy-Item $ahkFile "$ahkRun" -Force
+	$ahkProc = Start-Process -FilePath 'AutoHotKey' `
+					   -ArgumentList $ahkRun `
+					   -PassThru
+	Write-Debug "$ahkRun start time:`t$($ahkProc.StartTime.ToShortTimeString())"
+	Write-Debug "$ahkRun process ID:`t$($ahkProc.Id)"
     Uninstall-ChocolateyPackage @packageArgs
+	Remove-Item "$ahkRun" -Force
   }
 } elseif ($key.Count -eq 0) {
   Write-Warning "$packageName has already been uninstalled by other means."
