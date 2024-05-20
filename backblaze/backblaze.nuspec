@@ -10,35 +10,33 @@
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Resilio Sync Home (Install)</title>
-    <authors>Resilio Inc.</authors>
-    <projectUrl>https://www.resilio.com/individuals/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/74bfdeb7cc53ed3c3d6089844021b51b17fd0e40/resilio-sync-home/tools/icon.png</iconUrl>
-    <copyright>© 2022 Resilio, Inc.</copyright>
-    <licenseUrl>https://www.resilio.com/legal/eula/</licenseUrl>
+    <title>Backblaze Backup Client (Install)</title>
+    <authors>Backblaze Inc.</authors>
+    <projectUrl>https://www.backblaze.com/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/7f7f342d4101ec01bbd1dc98e4a3bceec19ac1c6/backblaze/tools/icon.png</iconUrl>
+    <copyright>© 2024 Backblaze, Inc.</copyright>
+    <licenseUrl>https://www.backblaze.com/company/policy/terms-of-service</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <docsUrl>https://www.resilio.com/tech/sync-tutorials-and-howto/</docsUrl>
-    <mailingListUrl>https://forum.resilio.com/</mailingListUrl>
+    <docsUrl>https://www.backblaze.com/computer-backup/docs</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>resilio sync btsync bittorrent backup</tags>
-    <summary>Resilio Sync - A fast, reliable, and simple file sync and share solution.</summary>
-    <description>Resilio Sync is a fast, reliable, and simple file sync and share solution, powered by P2P technology.
-	To remove user settings when uninstalling, run `choco install backblaze --params /DesktopShortcut --ia '-signinaccount ""email"" ""password""'`.
+    <tags>backblaze backup</tags>
+    <summary></summary>
+    <description>Backblaze is an online backup tool that allows users to back up their data to offsite data centers.
+	To install, run `choco install backblaze --ia '-signinaccount ""email"" ""password""'`.
+	To add a desktop shortcut, add `--params /DesktopShortcut`.
 	</description>
-    <releaseNotes>* Use sha-256 signed certificate for WebUI for new installations
-* Add .icloud to default IgnoreList
-* Deprecated: support for WindowsServers for Sync Home Free and Pro
-* Fixed non-clickable "Can't download file" error
-* Fixed improper reporting the error about missing access permissions
-* Fixed false positive "No free space" error on WD NAS
-* Fixed crashes on QNAP and Synology in some cases
-* Fixed crash caused by mix of composed and decomposed symbols in filenames
-* Fixed crash when syncing streams from NTFS formatted drive on macOS
-* Fixed losing history log entries after update
-* Fixed generating sample configuration file
-* Fixed Finder Extensions getting enabled again after Sync restart on macOS
-* Other core and UI fixes</releaseNotes>
+    <releaseNotes>### Improvements
+The following improvements were made in this release.
+* A Show Password button is now displayed on the “Private Encryption Key” window. The warning message text was also updated.
+* The process for handling the end-of-life status of an installed client version was improved through various enhancements.
+### Bug Fixes
+The following issues were corrected in this release.
+* Files that contain a resource fork no longer fail when scheduled for backup.
+* Version History settings are now retained after an “Inherit Backup State” is completed.
+* Additional SHA-1 checks were implemented to prevent corrupted backup files before uploading to servers.
+* If a large file existed that required making a full copy of that large file to back up and a user deletes that large file from their computer, a “Low on Disk Space” error is no longer returned.</releaseNotes>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
