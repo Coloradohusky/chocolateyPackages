@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ftb</id>
-    <version>1.25.8</version>
+    <version>1.25.9</version>
 	<packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/ftb</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -24,19 +24,22 @@
     <tags>feed-the-beast modded minecraft ftb java</tags>
     <summary>Find, download, and manage your FTB Mod packs.</summary>
     <description>Find, download, and manage your FTB Mod packs!</description>
-    <releaseNotes>This version also brings the availability of our Electron only version of the FTB App for Windows! You can get it from the FTB website.
-* Added
-    * CurseForge mods will now have a "CurseForge" badge in the mod details that will take you to the mod page on the CurseForge website #716
-* Changed
-    * All authentication methods now use the ftb:// protocol instead of a local web server. This should improve the reliability of the authentication process
-    * We now refresh your Minecraft Authentication token if it's within 6 hours of expiring to ensure you can continue to play your instances without interruption
-    * Improved the wording around the "Instance relocation system" so it is clear that this is a relocation process and not a just a settings value #1077
-    * Ram will now actually save if you change it via the input box #1024
-    * Ram values now show the correct ram calculation. Thanks to @bryce-schultz
-    * Hopefully fixed the app icon not working on linux machines #1098
-    * Some modpack names breaking the file path due to trailing spaces #1099
-    * Instances can now be relocated to basically anywhere instead of having safeguards around nested folders #1061 #1095
-    * Java Licenses not linking to their respective Github Pages correctly</releaseNotes>
+    <releaseNotes>With the release of Minecraft 1.20.6, we've had to make some changes to our Java installer to make sure it plays nicely with the new version of Minecraft.
+###🎉 Added
+* CurseForge mods will now have a "CurseForge" badge in the mod details that will take you to the mod page on the CurseForge website #716
+###🔧 Changed
+* Made some minor modifications to the app to better handle having no internet connection
+* When installing a modern Minecraft modpack on an Arm system, the app should now install an Arm compatible version of Java
+###🐞 Fixed
+* Fixed some instances not being abled to be installed due to empty space at the end of the instance name. #1114
+* Fixed the apps internal titlebar still showing when the app is being started #1105 thanks to @su226
+* Fixed the Java installer not working for 1.20.6+
+* Added missing Java licenses to our open source page
+* Installing custom mods would result in their curseforge link being set to "Project Page", this has now been fixed
+* Possible fix for Linux systems that have issues with sandboxing when using Electron #1123
+###🗑 Removed
+* Legacy Minecraft Login remaining code has been removed as this is no longer supported by Mojang
+</releaseNotes>
     <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
