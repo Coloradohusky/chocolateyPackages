@@ -30,9 +30,9 @@
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <dependencies>
+    <!-- <dependencies>
       <dependency id="chocolatey" version="0.9.9.7" />
-    </dependencies>
+    </dependencies> -->
     <!-- chocolatey-core.extension - https://community.chocolatey.org/packages/chocolatey-core.extension -->
   </metadata>
   <files>
