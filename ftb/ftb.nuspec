@@ -13,7 +13,7 @@
     <title>Feed the Beast</title>
     <authors>Feed the Beast</authors>
 	<projectUrl>https://feed-the-beast.com/ftb-app</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/7bd510541507bacf0d4f6b24e118553d5c7826d2/ftb/tools/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/083862aa2350219d550e7287c7aef71181eb7bba/ftb/icon.png</iconUrl>
     <copyright>© 2024 - Copyright Feed The Beast Ltd</copyright>
     <licenseUrl>https://github.com/FTBTeam/FTB-App/blob/main/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -23,7 +23,7 @@
     <projectUrl>https://sideloadly.io/</projectUrl>
     <!-- There are a number of CDN Services that can be used for hosting the Icon for a package. More information can be found here: https://docs.chocolatey.org/en-us/create/create-packages#package-icon-guidelines -->
     <!-- Here is an example using Githack -->
-    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/107f11b3a5b9b53579d4285eb579b7ed845a2940/sideloadly/tools/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/083862aa2350219d550e7287c7aef71181eb7bba/sideloadly/icon.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
     <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>

@@ -13,7 +13,7 @@
     <title>RALibRetro</title>
     <authors>RetroAchievements developers</authors>
 	<projectUrl>https://github.com/RetroAchievements/RALibretro</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/74bfdeb7cc53ed3c3d6089844021b51b17fd0e40/ralibretro/tools/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/083862aa2350219d550e7287c7aef71181eb7bba/ralibretro/icon.png</iconUrl>
     <copyright>GPLv3</copyright>
     <licenseUrl>https://github.com/RetroAchievements/RALibretro/blob/1.7.0/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

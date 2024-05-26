@@ -13,7 +13,7 @@
     <title>Backblaze Backup Client (Install)</title>
     <authors>Backblaze Inc.</authors>
     <projectUrl>https://www.backblaze.com/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/7f7f342d4101ec01bbd1dc98e4a3bceec19ac1c6/backblaze/tools/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/083862aa2350219d550e7287c7aef71181eb7bba/backblaze/icon.png</iconUrl>
     <copyright>© 2024 Backblaze, Inc.</copyright>
     <licenseUrl>https://www.backblaze.com/company/policy/terms-of-service</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

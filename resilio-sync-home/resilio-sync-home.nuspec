@@ -13,7 +13,7 @@
     <title>Resilio Sync Home (Install)</title>
     <authors>Resilio Inc.</authors>
     <projectUrl>https://www.resilio.com/individuals/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/74bfdeb7cc53ed3c3d6089844021b51b17fd0e40/resilio-sync-home/tools/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/083862aa2350219d550e7287c7aef71181eb7bba/resilio-sync-home/icon.png</iconUrl>
     <copyright>© 2024 Resilio, Inc.</copyright>
     <licenseUrl>https://www.resilio.com/legal/eula/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
