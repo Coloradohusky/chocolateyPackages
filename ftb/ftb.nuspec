@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ftb</id>
-    <version>1.25.9</version>
+    <version>1.25.13</version>
 	<packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/ftb</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -24,26 +24,18 @@
     <tags>feed-the-beast modded minecraft ftb java</tags>
     <summary>Find, download, and manage your FTB Mod packs.</summary>
     <description>Find, download, and manage your FTB Mod packs!</description>
-    <releaseNotes>With the release of Minecraft 1.20.6, we've had to make some changes to our Java installer to make sure it plays nicely with the new version of Minecraft.
-###🎉 Added
-* CurseForge mods will now have a "CurseForge" badge in the mod details that will take you to the mod page on the CurseForge website #716
-###🔧 Changed
-* Made some minor modifications to the app to better handle having no internet connection
-* When installing a modern Minecraft modpack on an Arm system, the app should now install an Arm compatible version of Java
+    <releaseNotes>###🎉 Added
+* You can now disable our helper mod injection in the modpack settings. Typically these mods help speed up modpack loading and keep the app and your instance in sync but sometimes they can cause issues. When this is the case, you can now disable them with ease 🔥
 ###🐞 Fixed
-* Fixed some instances not being abled to be installed due to empty space at the end of the instance name. #1114
-* Fixed the apps internal titlebar still showing when the app is being started #1105 thanks to @su226
-* Fixed the Java installer not working for 1.20.6+
-* Added missing Java licenses to our open source page
-* Installing custom mods would result in their curseforge link being set to "Project Page", this has now been fixed
-* Possible fix for Linux systems that have issues with sandboxing when using Electron #1123
-###🗑 Removed
-* Legacy Minecraft Login remaining code has been removed as this is no longer supported by Mojang
+* Selecting "Recommended" in the Java settings of a modpack should now work again
+* Right clicking on a modpack card will now correctly show the folders you can open when hovering over "Open Folder"
+* When opening a folder the app will now always use the systems native behavior for opening folders. This stops the folders from opening behind the app on some systems
+* Resolved an issue related to update cancelling causing the app to go into an infinite update attempt loop
+* If for what ever reason the app fails to download a library from our library mirror server, we will now fallback to the official library server. This should help with some download issues on some packs
 </releaseNotes>
     <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="chocolatey" version="0.9.9.7" />
     </dependencies>
     <!-- chocolatey-core.extension - https://community.chocolatey.org/packages/chocolatey-core.extension -->
   </metadata>
