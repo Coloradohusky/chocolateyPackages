@@ -1,8 +1,8 @@
 ﻿$packageName   = 'ralibretro'
 $url           = 'https://retroachievements.org/bin/RALibretro.zip'
 $url64         = 'https://retroachievements.org/bin/RALibretro-x64.zip'
-$checksum      = '0EA1E31F67D169459FCB7FFBF47987F9EAADFB42FDE0134AC54836A0E8AB739F'
-$checksum64    = 'BE5339C5CC7ECEE627CCB825ED71D89002A7E16607E665DD4BF9EBA590862B0B'
+$checksum      = '7B833D2CE953D292EBF5D55BED298757A1115337F9930EB73D9F0ACC59F820DE'
+$checksum64    = 'F23ABD8C48CDF6629BE798BB4F2746354FCD8CE5039526E57E3097FF2E095012'
 $checksumType  = 'sha256'
 $checksumType64= 'sha256'
 
