@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>backblaze</id>
-    <version>9.0.1.777</version>
+    <version>9.0.2.783</version>
     <packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/backblaze</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -28,15 +28,15 @@
 	To add a desktop shortcut, add `--params /DesktopShortcut`.
 	</description>
     <releaseNotes>### Improvements
-The following improvements were made in this release.
-* A Show Password button is now displayed on the “Private Encryption Key” window. The warning message text was also updated.
-* The process for handling the end-of-life status of an installed client version was improved through various enhancements.
+The following improvement was made in this release.
+* Notifications and the process for handling the end-of-life status of an installed Backup Client version were improved through various enhancements.
 ### Bug Fixes
 The following issues were corrected in this release.
-* Files that contain a resource fork no longer fail when scheduled for backup.
-* Version History settings are now retained after an “Inherit Backup State” is completed.
-* Additional SHA-1 checks were implemented to prevent corrupted backup files before uploading to servers.
-* If a large file existed that required making a full copy of that large file to back up and a user deletes that large file from their computer, a “Low on Disk Space” error is no longer returned.</releaseNotes>
+* The correct version history is now displayed in the Control Panel after a Backup Client upgrade.
+* An upgrade link now appears so a user can upgrade to “Forever” version history.
+* Version History text and stats persist after upgrading the Backup Client.
+* Non-functional updates were made to the Computer Backup Installer.
+* Help Center text and a link was added to the Backup Client Control Panel for Windows 11.</releaseNotes>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
