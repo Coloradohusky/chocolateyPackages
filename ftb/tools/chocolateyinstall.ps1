@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64      = 'https://piston.feed-the-beast.com/app/ftb-app-1.25.13-x64.exe'
+$url64      = 'https://piston.feed-the-beast.com/app/ftb-app-1.25.18-x64.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -10,7 +10,7 @@ $packageArgs = @{
 
   softwareName  = 'FTB Electron App*'
 
-  checksum64    = '4D79958F4EA0E09CDA48C66EC90A78DEF616D54BFF4E743393DCF75582DDB2E1'
+  checksum64    = '8A2662E1E0DD5975F0869D8055905AE8D0A1D160460CA84F58BAB0233064C7C9'
   checksumType64= 'sha256'
 
   silentArgs   = '/S'

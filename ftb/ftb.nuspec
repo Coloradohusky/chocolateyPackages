@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ftb</id>
-    <version>1.25.13</version>
+    <version>1.25.18</version>
 	<packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/ftb</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -25,13 +25,17 @@
     <summary>Find, download, and manage your FTB Mod packs.</summary>
     <description>Find, download, and manage your FTB Mod packs!</description>
     <releaseNotes>###🎉 Added
-* You can now disable our helper mod injection in the modpack settings. Typically these mods help speed up modpack loading and keep the app and your instance in sync but sometimes they can cause issues. When this is the case, you can now disable them with ease 🔥
+* Advanced settings page that allows for more control over some of the app's internals
+* Advanced settings page now includes an option to disable (Neo)Forge processor hash checking. This is not recommended unless you are experiencing issues with installing Forge / NeoForge modpacks on Linux Fedora #1162
+* Reset to default button on the JVM args in instance settings and instance defaults
+###🔧 Changed
+* Instance relocation has been moved to the App settings page instead of the instance settings page
+* Instances settings title has been changed to Instance Defaults to better reflect its purpose
+* JVM arguments are no longer forced onto instances, our original defaults, which reflect Mojang's recommendations, are now inserted into the Instances Defaults JVM args options as well as retroactively being added to all existing instances. New instances will pull from the Instance Defaults. This allows advanced users complete control over the JVM args. If you do not know what this is, we recommend that you do not change these values. #1051 @pucgenie
 ###🐞 Fixed
-* Selecting "Recommended" in the Java settings of a modpack should now work again
-* Right clicking on a modpack card will now correctly show the folders you can open when hovering over "Open Folder"
-* When opening a folder the app will now always use the systems native behavior for opening folders. This stops the folders from opening behind the app on some systems
-* Resolved an issue related to update cancelling causing the app to go into an infinite update attempt loop
-* If for what ever reason the app fails to download a library from our library mirror server, we will now fallback to the official library server. This should help with some download issues on some packs
+* You can now relocate instances when the original directory is no longer available (e.g moved, unmounted, etc) #1156 @jcccp1211
+* Cancelling an instance update will no longer remove it from the instance list #1153 @Rushmead
+* Instance defaults will now actually use the memory setting for new instances #1149 @BalloonFish822
 </releaseNotes>
     <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
