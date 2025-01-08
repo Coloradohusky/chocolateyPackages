@@ -1,10 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName    = 'resilio-sync-home'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://download-cdn.resilio.com/stable/windows/Resilio-Sync.exe'
-$checksum       = '8101AB7A109A8BF48555B87F0E7F0ACA6311B3CD32DB2906D6DF4BE7B88C8947'
-$url64          = 'https://download-cdn.resilio.com/stable/windows64/Resilio-Sync_x64.exe'
-$checksum64     = '6B78A98202BDF72572B8F5590422CFAE7B24B8775499406FEC7ED1B68B98011D'
+$url          = 'https://download-cdn.resilio.com/stable/windows/64/0/Resilio-Sync_x64.exe'
+$checksum     = 'B7CD0321756416BF8B476FE139456A1E7B199A73696E58EB2C1C81B46F152F37'
 
 # SETTINGS:
 # Create Desktop icon (default: true)
@@ -18,14 +16,11 @@ $packageArgs = @{
   packageName    = $packageName
   fileType       = 'EXE'
   url            = $url
-  url64          = $url64
   validExitCodes = @(0, 1)
   silentArgs     = '/S'
   softwareName   = 'Resilio Sync'
   checksum       = $checksum
-  checksum64     = $checksum64
   checksumType   = 'sha256' 
-  checksumType64 = 'sha256'
 }
 
 Start-CheckandStop "Resilio Sync"
