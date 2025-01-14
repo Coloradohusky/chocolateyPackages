@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>backblaze</id>
-    <version>9.0.2.783</version>
+    <version>9.1.0.817</version>
     <packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/backblaze</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -28,15 +28,13 @@
 	To add a desktop shortcut, add `--params /DesktopShortcut`.
 	</description>
     <releaseNotes>### Improvements
-The following improvement was made in this release.
-* Notifications and the process for handling the end-of-life status of an installed Backup Client version were improved through various enhancements.
-### Bug Fixes
-The following issues were corrected in this release.
-* The correct version history is now displayed in the Control Panel after a Backup Client upgrade.
-* An upgrade link now appears so a user can upgrade to “Forever” version history.
-* Version History text and stats persist after upgrading the Backup Client.
-* Non-functional updates were made to the Computer Backup Installer.
-* Help Center text and a link was added to the Backup Client Control Panel for Windows 11.</releaseNotes>
+* Improvements were implemented to strengthen the Windows Installer, laying the groundwork for a future installation.
+* cURL version 8.9.1 is now supported.
+* The "Skipped Files" process was enhanced for better performance and more efficient file handling.
+* The Backup Client was upgraded to support OpenSSL v3.3.2.
+### Bug Fix
+* An issue was resolved that caused the Backup Client to crash when the number of top-level directories exceeded 200,000 entries### Bug Fixes
+</releaseNotes>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
