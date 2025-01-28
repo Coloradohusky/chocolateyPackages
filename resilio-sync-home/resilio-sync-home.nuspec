@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>resilio-sync-home</id>
-    <version>3.0.1.1414</version>
+    <version>3.0.2.1058</version>
     <packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/resilio-sync-home</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -26,9 +26,9 @@
     <description>Resilio Sync is a fast, reliable, and simple file sync and share solution, powered by P2P technology.
 	To remove user settings when uninstalling, run `choco uninstall resilio-sync-home --ua /remsettings`.
 	</description>
-    <releaseNotes>* Fixed XSS vulnerability in device name in UI
-* Fixed UI requesting the license when linking devices
-* Minor internal fixes and improvements
+    <releaseNotes>* Support dark UI theme in Sync on macOS
+* Minor UI and core improvements
+
 
 
 </releaseNotes>

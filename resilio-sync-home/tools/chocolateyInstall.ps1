@@ -2,7 +2,7 @@
 $packageName    = 'resilio-sync-home'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://download-cdn.resilio.com/stable/windows/64/0/Resilio-Sync_x64.exe'
-$checksum     = 'B7CD0321756416BF8B476FE139456A1E7B199A73696E58EB2C1C81B46F152F37'
+$checksum     = '417B4589B7FD17AE82B83FB7461C98473C810CD9DBE004858308428FD44A04EA'
 
 # SETTINGS:
 # Create Desktop icon (default: true)
