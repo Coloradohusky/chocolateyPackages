@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ftb</id>
-    <version>1.25.18</version>
+    <version>1.27.2</version>
 	<packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/ftb</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -18,24 +18,24 @@
     <licenseUrl>https://github.com/FTBTeam/FTB-App/blob/main/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/FTBTeam/FTB-App</projectSourceUrl>
-    <docsUrl>https://feed-the-beast.com/ftb-app/getting-started</docsUrl>
+    <docsUrl>https://docs.feed-the-beast.com/docs/app/Guides/getting-started/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/FTBTeam/FTB-App/issues</bugTrackerUrl>
     <tags>feed-the-beast modded minecraft ftb java</tags>
     <summary>Find, download, and manage your FTB Mod packs.</summary>
     <description>Find, download, and manage your FTB Mod packs!</description>
     <releaseNotes>###🎉 Added
-* Advanced settings page that allows for more control over some of the app's internals
-* Advanced settings page now includes an option to disable (Neo)Forge processor hash checking. This is not recommended unless you are experiencing issues with installing Forge / NeoForge modpacks on Linux Fedora #1162
-* Reset to default button on the JVM args in instance settings and instance defaults
+* Zip based log exporting
+* Prefer IPv4 option to the instance settings for when your instance is having networking issues
+###🗑 Removed
+* Cloud saves as this was provided by our previous partner and not used by many users
+* MineTogether integration
+* Cloud/Remote based log uploading
+* Redundant DNS over HTTPS features
+* Mojang domain proxying
+* Cloud based pack sharing. This will be added back as more standard Zip exporting in the next update
 ###🔧 Changed
-* Instance relocation has been moved to the App settings page instead of the instance settings page
-* Instances settings title has been changed to Instance Defaults to better reflect its purpose
-* JVM arguments are no longer forced onto instances, our original defaults, which reflect Mojang's recommendations, are now inserted into the Instances Defaults JVM args options as well as retroactively being added to all existing instances. New instances will pull from the Instance Defaults. This allows advanced users complete control over the JVM args. If you do not know what this is, we recommend that you do not change these values. #1051 @pucgenie
-###🐞 Fixed
-* You can now relocate instances when the original directory is no longer available (e.g moved, unmounted, etc) #1156 @jcccp1211
-* Cancelling an instance update will no longer remove it from the instance list #1153 @Rushmead
-* Instance defaults will now actually use the memory setting for new instances #1149 @BalloonFish822
+* Updated the mods page a little, remove the CurseForge logo, added the title as a link, and we now show the file name
 </releaseNotes>
     <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
