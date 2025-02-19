@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>backblaze</id>
-    <version>9.1.0.817</version>
+    <version>9.1.0.833</version>
     <packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/backblaze</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -14,7 +14,7 @@
     <authors>Backblaze Inc.</authors>
     <projectUrl>https://www.backblaze.com/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/083862aa2350219d550e7287c7aef71181eb7bba/backblaze/icon.png</iconUrl>
-    <copyright>© 2024 Backblaze, Inc.</copyright>
+    <copyright>© 2025 Backblaze, Inc.</copyright>
     <licenseUrl>https://www.backblaze.com/company/policy/terms-of-service</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
@@ -28,12 +28,17 @@
 	To add a desktop shortcut, add `--params /DesktopShortcut`.
 	</description>
     <releaseNotes>### Improvements
-* Improvements were implemented to strengthen the Windows Installer, laying the groundwork for a future installation.
-* cURL version 8.9.1 is now supported.
-* The "Skipped Files" process was enhanced for better performance and more efficient file handling.
-* The Backup Client was upgraded to support OpenSSL v3.3.2.
+* The process to check for existing installations was improved to prevent corrupt installations.
+* The Windows Backup Client installer was enhanced with performance and reliability optimizations for smoother installations and upgrade and downgrade experiences.
+* Various security improvements were made to the Windows Backup Client installer.
 ### Bug Fix
-* An issue was resolved that caused the Backup Client to crash when the number of top-level directories exceeded 200,000 entries### Bug Fixes
+* An issue was resolved that caused an unnecessary Windows User Account Control (UAC) modal to appear when auto-updates are enabled.
+* An issue was resolved that caused errors when installing the Windows Backup Client for Groups.
+* An issue was resolved that caused the Windows Backup Client installer to fail when used with Microsoft Office 365 Single Sign-On (SSO).
+* An issue was resolved that caused an installation to fail on systems that do not use C: as a boot drive.
+* An issue was resolved that caused an error to occur when a custom installer was already used or expired.
+* An issue was resolved that caused the Backup Client to freeze and display an error during installation when logging in with an SSO account.
+* An issue was resolved that prevented the Backup Client from installing when a gift code was used.
 </releaseNotes>
     <!-- =============================== -->
 
