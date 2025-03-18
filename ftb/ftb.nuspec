@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ftb</id>
-    <version>1.27.2</version>
+    <version>1.27.3</version>
 	<packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/ftb</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -24,18 +24,18 @@
     <tags>feed-the-beast modded minecraft ftb java</tags>
     <summary>Find, download, and manage your FTB Mod packs.</summary>
     <description>Find, download, and manage your FTB Mod packs!</description>
-    <releaseNotes>###🎉 Added
-* Zip based log exporting
-* Prefer IPv4 option to the instance settings for when your instance is having networking issues
-###🗑 Removed
-* Cloud saves as this was provided by our previous partner and not used by many users
-* MineTogether integration
-* Cloud/Remote based log uploading
-* Redundant DNS over HTTPS features
-* Mojang domain proxying
-* Cloud based pack sharing. This will be added back as more standard Zip exporting in the next update
-###🔧 Changed
-* Updated the mods page a little, remove the CurseForge logo, added the title as a link, and we now show the file name
+    <releaseNotes>###🔧 Changed
+* Updated electron to 31.7.6
+* Enabled changelogs for CurseForge Modpacks
+###🐞 Fixed
+* Actually save modpack settings when toggling the IPv4 option, this before required something else to change before this option would save.
+* Issues with App Channels not persisting on app restarts
+* Forge 1.20.3 and Forge 1.21.3 not being able to start
+* Log saving on on-standard User home directories will now correctly go to the Download/Desktop folder even if your home folder is no in the C drive on windows
+* The default category will no longer vanish if you only have one instance and you move that instance to a custom category
+* Mods on curseforge modpacks will now correctly show again
+* Resolved API issues that would cause ResourcePacks and ShaderPacks to download into the mods folder
+* Improved our internal testing processes to ensure app updating failures are not possible going forwards
 </releaseNotes>
     <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
