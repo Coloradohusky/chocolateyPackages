@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>backblaze</id>
-    <version>9.1.0.833</version>
+    <version>9.2.0.835</version>
     <packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/backblaze</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -28,17 +28,15 @@
 	To add a desktop shortcut, add `--params /DesktopShortcut`.
 	</description>
     <releaseNotes>### Improvements
-* The process to check for existing installations was improved to prevent corrupt installations.
-* The Windows Backup Client installer was enhanced with performance and reliability optimizations for smoother installations and upgrade and downgrade experiences.
-* Various security improvements were made to the Windows Backup Client installer.
-### Bug Fix
-* An issue was resolved that caused an unnecessary Windows User Account Control (UAC) modal to appear when auto-updates are enabled.
-* An issue was resolved that caused errors when installing the Windows Backup Client for Groups.
-* An issue was resolved that caused the Windows Backup Client installer to fail when used with Microsoft Office 365 Single Sign-On (SSO).
-* An issue was resolved that caused an installation to fail on systems that do not use C: as a boot drive.
-* An issue was resolved that caused an error to occur when a custom installer was already used or expired.
-* An issue was resolved that caused the Backup Client to freeze and display an error during installation when logging in with an SSO account.
-* An issue was resolved that prevented the Backup Client from installing when a gift code was used.
+* Restrictions were removed that prevented certain large files from being backed up.
+* The threading mechanism was optimized to enhance performance and efficiency in data operations.
+* Files with missing chunks are now automatically repaired when possible.
+### Bug Fixes
+* Unnecessary files were removed to prevent the drive from reaching capacity.
+* An issue was resolved that caused the Next button to briefly appear when the installer is re-run.
+* An issue was resolved that caused an unresponsive Close button to appear on the "Install Complete" modal.
+* An issue was resolved that caused the app to freeze and display an error when logging in with a single-sign on (SSO) account.
+* An issue was resolved where selecting the wrong SSO caused the client to time out.
 </releaseNotes>
     <!-- =============================== -->
 
