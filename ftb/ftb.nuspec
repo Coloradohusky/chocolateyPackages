@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ftb</id>
-    <version>1.27.3</version>
+    <version>1.27.4</version>
 	<packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/ftb</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -14,7 +14,7 @@
     <authors>Feed the Beast</authors>
 	<projectUrl>https://feed-the-beast.com/ftb-app</projectUrl>
     <iconUrl>https://rawcdn.githack.com/Coloradohusky/chocolateyPackages/083862aa2350219d550e7287c7aef71181eb7bba/ftb/icon.png</iconUrl>
-    <copyright>© 2024 - Copyright Feed The Beast Ltd</copyright>
+    <copyright>© 2025 - Copyright Feed The Beast Ltd</copyright>
     <licenseUrl>https://github.com/FTBTeam/FTB-App/blob/main/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/FTBTeam/FTB-App</projectSourceUrl>
@@ -24,18 +24,10 @@
     <tags>feed-the-beast modded minecraft ftb java</tags>
     <summary>Find, download, and manage your FTB Mod packs.</summary>
     <description>Find, download, and manage your FTB Mod packs!</description>
-    <releaseNotes>###🔧 Changed
-* Updated electron to 31.7.6
-* Enabled changelogs for CurseForge Modpacks
-###🐞 Fixed
-* Actually save modpack settings when toggling the IPv4 option, this before required something else to change before this option would save.
-* Issues with App Channels not persisting on app restarts
-* Forge 1.20.3 and Forge 1.21.3 not being able to start
-* Log saving on on-standard User home directories will now correctly go to the Download/Desktop folder even if your home folder is no in the C drive on windows
-* The default category will no longer vanish if you only have one instance and you move that instance to a custom category
-* Mods on curseforge modpacks will now correctly show again
-* Resolved API issues that would cause ResourcePacks and ShaderPacks to download into the mods folder
-* Improved our internal testing processes to ensure app updating failures are not possible going forwards
+    <releaseNotes>###🐞 Fixed
+* Resolved issues with newer versions of Minecraft and different Modloaders
+* Attempt to fix issues with old process killing causing loops
+* Removed server files link from CurseForge projects as this directed to our website
 </releaseNotes>
     <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
