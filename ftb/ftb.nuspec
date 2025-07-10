@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ftb</id>
-    <version>1.27.4</version>
+    <version>1.28.0</version>
 	<packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/ftb</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -24,10 +24,26 @@
     <tags>feed-the-beast modded minecraft ftb java</tags>
     <summary>Find, download, and manage your FTB Mod packs.</summary>
     <description>Find, download, and manage your FTB Mod packs!</description>
-    <releaseNotes>###🐞 Fixed
-* Resolved issues with newer versions of Minecraft and different Modloaders
-* Attempt to fix issues with old process killing causing loops
-* Removed server files link from CurseForge projects as this directed to our website
+    <releaseNotes>###🎉 Added
+* Login with FTB Account but this is disabled for now, we'll be making more announcements about this very soon!
+* Updated and refreshed Modpack Preview page to better show off Modpacks
+* Official flatpak releases
+* Gamemode flag enable for flatpak users to get improved performance from their systems
+###🗑 Removed
+* All old traces to the previous login system we had for an ad-free experience
+* Favorites page as this was relatively unused
+###🔧 Changed
+* Moved from Vue2 to Vue3, although this sounds minor, this required major reworks in our tooling, startup processes, etc. We're hopeful all of our testing and ensure this will be a smooth transision for everyone.
+* Reworked startup flows to improve deadlocks
+* Reworked self-updating flow
+* Minor reworks to the sidebar
+* Moved the install progress to the sidebar instead of the library page
+* Improved logging in various areas
+###🐞 Fixed
+* Mods in the mods tab of instances should now load a lot quicker
+* Incorrect Java version selection for Fabric versions
+* Various improvements and fixes to the Microsoft login flow for Minecraft
+* Various UI issues regarding searching, app lockups, etc.
 </releaseNotes>
     <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->

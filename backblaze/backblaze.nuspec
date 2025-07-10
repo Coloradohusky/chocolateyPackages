@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>backblaze</id>
-    <version>9.2.0.835</version>
+    <version>9.2.1.859</version>
     <packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/backblaze</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -27,17 +27,10 @@
 	To install, run `choco install backblaze --ia '-signinaccount ""email"" ""password""'`.
 	To add a desktop shortcut, add `--params /DesktopShortcut`.
 	</description>
-    <releaseNotes>### Improvements
-* Restrictions were removed that prevented certain large files from being backed up.
-* The threading mechanism was optimized to enhance performance and efficiency in data operations.
-* Files with missing chunks are now automatically repaired when possible.
-### Bug Fixes
-* Unnecessary files were removed to prevent the drive from reaching capacity.
-* An issue was resolved that caused the Next button to briefly appear when the installer is re-run.
-* An issue was resolved that caused an unresponsive Close button to appear on the "Install Complete" modal.
-* An issue was resolved that caused the app to freeze and display an error when logging in with a single-sign on (SSO) account.
-* An issue was resolved where selecting the wrong SSO caused the client to time out.
-</releaseNotes>
+    <releaseNotes>### Bug Fixes
+* An issue was resolved where extremely large backup lists could take hours to load, potentially delaying backup operations. Performance has been improved for faster processing.
+* Resolved an issue where certain internal backup metadata could be incorrectly modified during self-healing. This update ensures better consistency between what the Backup Client shows as backed up and what’s retained in storage.
+* The Backup Client now limits this to a single log entry per several thousand lines to improve performance and reduce log size.</releaseNotes>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
