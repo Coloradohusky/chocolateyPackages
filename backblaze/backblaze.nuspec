@@ -22,7 +22,7 @@
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>backblaze backup</tags>
-    <summary></summary>
+    <summary>Create mirrors of your drives on the cloud with Backblaze.</summary>
     <description>Backblaze is an online backup tool that allows users to back up their data to offsite data centers.
 	To install, run `choco install backblaze --ia '-signinaccount ""email"" ""password""'`.
 	To add a desktop shortcut, add `--params /DesktopShortcut`.
