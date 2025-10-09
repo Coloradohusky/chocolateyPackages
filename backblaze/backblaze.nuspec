@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>backblaze</id>
-    <version>9.2.1.859</version>
+    <version>9.2.2.887</version>
     <packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/backblaze</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -28,9 +28,7 @@
 	To add a desktop shortcut, add `--params /DesktopShortcut`.
 	</description>
     <releaseNotes>### Bug Fixes
-* An issue was resolved where extremely large backup lists could take hours to load, potentially delaying backup operations. Performance has been improved for faster processing.
-* Resolved an issue where certain internal backup metadata could be incorrectly modified during self-healing. This update ensures better consistency between what the Backup Client shows as backed up and what’s retained in storage.
-* The Backup Client now limits this to a single log entry per several thousand lines to improve performance and reduce log size.</releaseNotes>
+* Dynamic disks can now be selected for backup. Previously selected volumes appeared as “Unplugged” and disappeared after a rescan. Dynamic disks are now recognized and selectable again, while iSCSI disks remain excluded as expected.</releaseNotes>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->

@@ -2,7 +2,7 @@
 $packageName    = 'backblaze'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://secure.backblaze.com/win32/install_backblaze.exe'
-$checksum       = '8398813C7C60488197277D84FEF2E40E2038538C9D90CB6EF0C97269D6BA4AFA'
+$checksum       = 'C1F451A571CACCCBF938B66CFB9995B5BF8871DEFBF65C1667CC5923106A74E7'
 $url64          = ''
 $checksum64     = ''
 
