@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ftb</id>
-    <version>1.28.0</version>
+    <version>1.28.2</version>
 	<packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/ftb</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -24,26 +24,19 @@
     <tags>feed-the-beast modded minecraft ftb java</tags>
     <summary>Find, download, and manage your FTB Mod packs.</summary>
     <description>Find, download, and manage your FTB Mod packs!</description>
-    <releaseNotes>###🎉 Added
-* Login with FTB Account but this is disabled for now, we'll be making more announcements about this very soon!
-* Updated and refreshed Modpack Preview page to better show off Modpacks
-* Official flatpak releases
-* Gamemode flag enable for flatpak users to get improved performance from their systems
-###🗑 Removed
-* All old traces to the previous login system we had for an ad-free experience
-* Favorites page as this was relatively unused
-###🔧 Changed
-* Moved from Vue2 to Vue3, although this sounds minor, this required major reworks in our tooling, startup processes, etc. We're hopeful all of our testing and ensure this will be a smooth transision for everyone.
-* Reworked startup flows to improve deadlocks
-* Reworked self-updating flow
-* Minor reworks to the sidebar
-* Moved the install progress to the sidebar instead of the library page
-* Improved logging in various areas
+    <releaseNotes>###🔧 Changed
+* Log backups with no longer stack indefinitely and will not auto delete after 5 backups or after 7 days
+* Added an option to remove instance logs from the log exporter functionality in the app settings
+* Added fallback endpoints to the Minecraft Authentication flow. Although we don't think this will do anything, it's worth being more inline with other platforms.
+* Added logging for all Fetch requests made by our Java subprocess which should help out team debug networking issues when they're reported
+* The RAM slider is now limited to at least 1GB of RAM.
 ###🐞 Fixed
-* Mods in the mods tab of instances should now load a lot quicker
-* Incorrect Java version selection for Fabric versions
-* Various improvements and fixes to the Microsoft login flow for Minecraft
-* Various UI issues regarding searching, app lockups, etc.
+* Update button on Modpacks showing even when the Modpack has been updated
+* Modpack category will now save when changed in the Modpack settings menu
+* Mod Loader selection will now actually apply instead of applying the default option every time
+* The RAM slider will no longer spam "Settings Saved" when moved
+* Creating an instance after having previously created an instance will no longer result in the RAM and screen resolution being set to zeros
+* Resolved a potential deadlock in the authentication flow for starting a pack causing users to get stuck in a "logging in" state
 </releaseNotes>
     <!-- =============================== -->
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
