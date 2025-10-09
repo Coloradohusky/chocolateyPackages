@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>resilio-sync-home</id>
-    <version>3.1.01073</version>
+    <version>3.1.1.1075</version>
     <packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/resilio-sync-home</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -26,12 +26,9 @@
     <description>Resilio Sync is a fast, reliable, and simple file sync and share solution, powered by P2P technology.
 	To remove user settings when uninstalling, run `choco uninstall resilio-sync-home --ua /remsettings`.
 	</description>
-    <releaseNotes>* New file download priority by file timestamp or by size
-* Fixed non-clickable "Can't download file" error status
-* Fixed layout for sorting dropdown on iOS
-* Fixed Sync not auto-starting on some Android devices
-* Added @__thumb* to default IgnoreList
-* Other bugfix
+    <releaseNotes>* Improved warning in WebUI if license cannot be applied by Sync.
+* Updated app's icons on NAS devices for clean installations.
+* Minor core bugfix.
 </releaseNotes>
     <!-- =============================== -->
 
