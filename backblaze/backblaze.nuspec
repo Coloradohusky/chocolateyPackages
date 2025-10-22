@@ -3,7 +3,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>backblaze</id>
-    <version>9.2.2.887</version>
+    <version>9.2.2.895</version>
     <packageSourceUrl>https://github.com/Coloradohusky/chocolateyPackages/tree/main/backblaze</packageSourceUrl>
     <owners>Coloradohusky</owners>
     <!-- ============================== -->
@@ -28,7 +28,7 @@
 	To add a desktop shortcut, add `--params /DesktopShortcut`.
 	</description>
     <releaseNotes>### Bug Fixes
-* Dynamic disks can now be selected for backup. Previously selected volumes appeared as “Unplugged” and disappeared after a rescan. Dynamic disks are now recognized and selectable again, while iSCSI disks remain excluded as expected.</releaseNotes>
+* The bz_tofix list is no longer generated when files haven been uploaded successfully.</releaseNotes>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
